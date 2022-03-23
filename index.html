@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Guilherme Gonçalves de Souza" />
+
+    <meta name="description" content="Modal responsiva" />
+
+    <title>Modal</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="./images/box-arrow-up.svg" />
+  </head>
+  <body>
+    <main>
+      <h1>Modal responsiva</h1>
+      <button class="openModal" onclick="Modal.open()">Abrir modal</button>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Modal aberta</h2>
+        <button class="exitModal" onclick="Modal.exit()">
+          <img src="./images/x-lg.svg" alt="Modal exit" />
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
